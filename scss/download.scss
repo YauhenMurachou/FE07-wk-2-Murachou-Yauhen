@@ -1,0 +1,54 @@
+.download__wrapper{
+	 margin: 6.25rem auto;
+	 text-align: center;
+	 .download__title{
+		font-family: 'Raleway', 'sans-serif';
+		font-size: 1.75rem;
+		line-height: 1.3125rem;
+		font-weight: 300;
+		color: #2d3033;
+		margin-bottom: 1rem;
+	}
+		.download__subtitle{
+			font-family: 'Raleway', 'sans-serif';
+			font-size: 0.8125rem;
+			line-height: 1.3125rem;
+			font-weight: 700;
+			text-transform: uppercase;
+			color: #2d3033;
+			margin-bottom: 2.625rem;
+		}
+		.download__link{
+			background-color: #e84545;
+			width: 17.5rem;
+			display: inline-block;
+			text-decoration: none;
+			font-family: 'Raleway', 'sans-serif';
+			font-size: 0.8125rem;
+			line-height: 2.875rem;
+			font-weight: 600;
+			text-transform: uppercase;
+			color: #ffffff;
+			transition-duration: 0.3s;
+			transition-timing-function: ease-in;
+			&:hover{
+				transition-duration: 0.3s;
+				transform:scale(1.15);
+				transition-timing-function: ease-in;
+				box-shadow: 0 0 10px rgba(0,0,0,0.5);
+			}	
+		}
+		@media (max-width: 576px){
+			.download__link{		
+				width: 100%;
+			}
+			.download__title{
+				line-height: 2rem;
+		}		
+	}
+ } 
+ @media (max-width: 576px){
+	.download__wrapper{
+		margin: 3rem auto;
+	}
+}

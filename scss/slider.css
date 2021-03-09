@@ -44,7 +44,7 @@
   width: 50%;
 }
 .slider__wrapper .slider__title {
-  font-family: Cardo;
+  font-family: "Cardo", "Open Sans", "Verdana", "Geneva", "Tahoma";
   font-size: 1.75rem;
   line-height: 2.625rem;
   font-weight: 400;

@@ -6,7 +6,7 @@ $(document) .ready (function(){
 		slidesToShow: 1,
 		speed: 1000,
 		infinite: false, 
-		appendDots: $('.slider__dots')
+		// appendDots: $('.slider__dots')
 			});
 			// $('.slider__wrapper').on ('beforechange', function (event, slick, currentSlide, nextSlide){
 			// 	console.log(nextSlide);

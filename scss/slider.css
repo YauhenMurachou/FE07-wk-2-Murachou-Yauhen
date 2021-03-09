@@ -3,7 +3,6 @@
   padding: 0;
   margin: 0;
   border: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   list-style: none;
 }
@@ -18,12 +17,8 @@
 
 /* Лента слайдов */
 .slick-track {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  align-items: flex-start;
 }
 
 /* Слайд */
@@ -42,17 +37,12 @@
   position: relative;
   background-color: #53354a;
 }
-
 .slider__wrapper .slider__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .slider__wrapper .slider__img {
   width: 50%;
 }
-
 .slider__wrapper .slider__title {
   font-family: Cardo;
   font-size: 1.75rem;
@@ -64,7 +54,6 @@
   margin-top: 6rem;
   max-width: 31.25rem;
 }
-
 @media (max-width: 991px) {
   .slider__wrapper .slider__title {
     font-size: 1.75rem;
@@ -74,11 +63,7 @@
   .slider__wrapper .slider__title::after {
     font-size: 0.6rem;
   }
-  .slider__wrapper .slider__dots {
-    margin-top: 2.2rem;
-  }
 }
-
 .slider__wrapper .slider__title::after {
   content: "Susan Sims, Interaction Designer at XYZ";
   font-style: normal;
@@ -92,29 +77,16 @@
   color: #ffffff;
   display: block;
 }
-
-.slider__wrapper .slider__dots {
-  margin-top: 3rem;
-}
-
 .slider__wrapper .slick-dots {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 .slider__wrapper .slick-dots li {
   margin: 0 0.625rem;
   list-style: none;
 }
-
-.slider__wrapper .slick-dots button {
+.slider__wrapper .slick-dots li button {
   font-size: 0;
   width: 0.625rem;
   height: 0.625rem;
@@ -123,54 +95,39 @@
   border: 1px solid #fff;
   outline: none;
 }
-
-.slider__wrapper .slick-dots button:hover {
+.slider__wrapper .slick-dots li button:hover {
   cursor: pointer;
   background-color: #fff;
 }
-
-.slider__wrapper .slick-dots button:active {
+.slider__wrapper .slick-dots li button:active {
   background-color: #fff;
 }
-
-.slider__wrapper .slick-dots button:visited {
+.slider__wrapper .slick-dots li.slick-active button {
   background-color: #fff;
 }
-
-.slider__wrapper .slick-dots .slick-active button {
-  background-color: #fff;
+@media (min-width: 885px) {
+  .slider__wrapper .slick-dots {
+    position: absolute;
+    z-index: 2;
+    bottom: 2rem;
+    right: 15rem;
+  }
 }
-
 @media (max-width: 884px) {
   .slider__wrapper .slider__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
   }
   .slider__wrapper .slider__item .slider__img {
     width: 100%;
     display: inline-block;
   }
   .slider__wrapper .slider__item .slider__right {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: baseline;
-        -ms-flex-pack: baseline;
-            justify-content: baseline;
+    flex-direction: column;
+    justify-content: baseline;
     margin: 0 auto;
     text-align: center;
   }
@@ -178,13 +135,9 @@
     margin-top: 3rem;
     margin-left: auto;
     margin-right: auto;
-    font-family: 'Cardo',"Open Sans", "Verdana", "Geneva", "Tahoma";
+    font-family: "Cardo", "Open Sans", "Verdana", "Geneva", "Tahoma";
   }
   .slider__wrapper .slider__item .slider__right .slider__title::after {
     text-align: center;
   }
-  .slider__wrapper .slider__dots {
-    margin-bottom: 2.2rem;
-  }
 }
-/*# sourceMappingURL=slider.css.map */

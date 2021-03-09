@@ -83,9 +83,9 @@
 		.slider__title::after{
 			font-size: 0.6rem;
 		}
-		.slider__dots{
-			margin-top: 2.2rem;
-		}
+		// .slider__dots{
+		// 	margin-top: 2.2rem;
+		// }
 	}
 	.slider__title::after{
 		content: "Susan Sims, Interaction Designer at XYZ";
@@ -100,10 +100,10 @@
 		color: #ffffff;
 		display: block;
 	}
-	.slider__dots{
-		margin-top: 3rem;
+	// .slider__dots{
+	// 	margin-top: 3rem;
 		
-	}
+	// }
 		.slick-dots{
 		display: flex;
 		align-items: center;
@@ -111,12 +111,12 @@
 		li{
 			margin: 0 0.625rem;
 			list-style: none;	
-			&:active{
-				background-color: #fff;	
-				&:visited{
-					background-color: #fff;
-				}
-		}
+		// 	&:active{
+		// 		background-color: #fff;	
+		// 		// &:visited{
+		// 		// 	background-color: #fff;
+		// 		// }
+		// }
 		button{
 			font-size: 0;
 			width: 0.625rem;
@@ -132,15 +132,25 @@
 			&:active{
 				background-color: #fff;
 			}
-			&:visited{
-				background-color: #fff;
-			}
+			// &:visited{
+			// 	background-color: #fff;
+			// }
 		}
-		.slick-active button{
+		
+		}
+		li.slick-active button{
 			background-color: #fff;
 		}
-		}
+	}
 
+	@media (min-width: 885px) {
+		.slick-dots{
+			position: absolute;
+			z-index: 2;
+			bottom: 2rem;
+			right: 15rem;
+		}
+	}
 	@media (max-width: 884px) {
 		.slider__item{
 			display: flex;
@@ -169,9 +179,7 @@
 				}
 			}
 		}
-		.slider__dots{
-			margin-bottom: 2.2rem;
-		}
+		
 		
 	 }
 	}

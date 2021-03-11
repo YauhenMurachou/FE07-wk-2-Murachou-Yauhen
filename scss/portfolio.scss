@@ -3,19 +3,35 @@
 	justify-content: space-between;
 	flex-wrap: wrap;
 	padding-bottom: 6.25rem;
-	.portfolio__img-wrapper{
+	.portfolio__item{
 	width: 25%;
 	max-height: 16rem;
 	border-right: 1px solid white;
 	transition: all 0.3s ease;
 	position: relative;
 	overflow: hidden;
-	&:hover{
-		transition: all 0.5s ease;
-		.portfolio__overlay{
-			opacity: 0.7;
-		}
-		}
+	
+		.portfolio__img-wrapper{
+			padding: 0 0 100% 0;
+			overflow: hidden;
+			
+			
+			.portfolio__image{
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 2;
+				&:hover{
+					transition: all 0.5s ease;
+					.portfolio__overlay{
+						opacity: 0.7;
+					}
+				}
+			}
+		
 		.portfolio__overlay {
 			position: absolute;
 			top: 0;
@@ -25,8 +41,13 @@
 			height: 100%;
 			width: 100%;
 			opacity: 0;
-			transition: .5s ease;
-			background-color: #e84545;;
+			transition: 0.5s ease;
+			background-color: #e84545;
+			z-index: 5;
+			&:hover{
+				opacity: 0.7;
+				}				
+			
 				.portfolio__text-img {
 				position: absolute;
 				top: 50%;
@@ -38,7 +59,8 @@
 				font-weight: 700;
 				text-transform: uppercase;
 				color: #ffffff;
-				text-align: center;				
+				text-align: center;
+						
 				}
 				.portfolio__text-img::after{
 					content: "User Interface Design";
@@ -52,18 +74,16 @@
 					font-weight: 400;
 					color: #ffffff;
 				}
+			}
 				
-		 }
-		.portfolio__image{
-			// width: 100%;
-			// height: 16rem;
-			padding: 0 0 100% 0;
-			overflow: hidden;
+		 
 		}
 	}	
-// @media (min-width: 751px) and (max-width: 1095px) {
-// 	.portfolio__img-wrapper{
-// 		height: 14rem;
+@media (max-width: 576px) {
+	.portfolio__item{
+	width: 50%;
+	}
+}
 		
 // 	.portfolio__image{
 // 			height: 14rem;

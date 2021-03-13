@@ -3,6 +3,8 @@
 	justify-content: space-between;
 	flex-wrap: wrap;
 	padding-bottom: 6.25rem;
+	
+	
 	.portfolio__item{
 	width: 25%;
 	max-height: 16rem;
@@ -78,6 +80,7 @@
 				
 		 
 		}
+	
 	}	
 @media (max-width: 576px) {
 	.portfolio__item{

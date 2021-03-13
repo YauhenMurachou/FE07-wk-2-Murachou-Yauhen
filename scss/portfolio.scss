@@ -2,8 +2,7 @@
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	padding-bottom: 6.25rem;
-	
+	padding-bottom: 6.25rem;	
 	
 	.portfolio__item{
 	width: 25%;
@@ -15,8 +14,7 @@
 	
 		.portfolio__img-wrapper{
 			padding: 0 0 100% 0;
-			overflow: hidden;
-			
+			overflow: hidden;			
 			
 			.portfolio__image{
 				width: 100%;
@@ -76,16 +74,14 @@
 					font-weight: 400;
 					color: #ffffff;
 				}
-			}
-				
-		 
-		}
-	
+			}		 
+		}	
 	}	
 @media (max-width: 576px) {
 	.portfolio__item{
 	width: 50%;
 	}
+}
 }
 		
 // 	.portfolio__image{
@@ -129,7 +125,7 @@
 // 		height: 75%;
 // }
 // }
-}
+
 
 
 

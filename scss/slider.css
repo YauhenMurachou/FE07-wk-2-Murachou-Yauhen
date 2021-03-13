@@ -54,38 +54,44 @@
   margin-top: 6rem;
   max-width: 31.25rem;
 }
+.slider__wrapper .slider__subtitle {
+  font-style: normal;
+  font-size: 0.8125rem;
+  margin: 1.5rem auto 0 3rem;
+  font-family: "Raleway", "Open Sans", "Verdana", "Geneva", "Tahoma";
+  line-height: 1.3125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
 @media (max-width: 1180px) {
   .slider__wrapper .slider__title {
     font-size: 1.75rem;
     margin-top: 4rem;
     margin-left: 2.5rem;
   }
-  .slider__wrapper .slider__title::after {
-    font-size: 0.6rem;
+}
+@media (max-width: 1077px) {
+  .slider__wrapper .slider__title {
+    font-size: 1.75rem;
+    margin-top: 1.75rem;
+    margin-left: 2.5rem;
+  }
+  .slider__wrapper .slider__subtitle {
+    font-size: 0.8rem;
+    margin-top: 1rem;
   }
 }
 @media (max-width: 935px) {
   .slider__wrapper .slider__title {
     font-size: 1.75rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
     margin-left: 2.5rem;
   }
-  .slider__wrapper .slider__title::after {
-    font-size: 0.6rem;
+  .slider__wrapper .slider__subtitle {
+    font-size: 0.8rem;
+    margin-top: 0.7rem;
   }
-}
-.slider__wrapper .slider__title::after {
-  content: "Susan Sims, Interaction Designer at XYZ";
-  font-style: normal;
-  font-size: 0.8125rem;
-  text-align: left;
-  margin: 1.5rem auto 0 auto;
-  font-family: "Raleway", "Open Sans", "Verdana", "Geneva", "Tahoma";
-  line-height: 1.3125rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #ffffff;
-  display: block;
 }
 .slider__wrapper .slick-dots {
   display: flex;
@@ -147,8 +153,8 @@
     margin-right: auto;
     font-family: "Cardo", "Open Sans", "Verdana", "Geneva", "Tahoma";
   }
-  .slider__wrapper .slider__item .slider__right .slider__title::after {
-    text-align: center;
+  .slider__wrapper .slider__item .slider__right .slider__subtitle {
+    margin: 1.5rem auto 0 auto;
   }
   .slider__wrapper .slick-dots {
     padding-top: 1rem;
